@@ -1,19 +1,46 @@
+*{margin:0;padding:0;}
+
 body{
 	background:#222;
-	color:#eee;
+	color:#ccc;
 	display:flex;
+	flex-direction:column;
 	align-items:center;
 	justify-content:center;	
   font-family: 'Courier New', monospace;
+	height:98vh;
 }
+
 
 input,label{
 	cursor:pointer;
 }
 
+label:hover{
+color:#fff;
+}
+
+.rangeslider{
+}
+
+.rangeslider label{
+padding: 10px 10px 10px 0
+}
+
+.rangeslider label:hover{
+	cursor:default;
+	color:#ccc
+}
+
+.rangeslider span {
+	color:orange;
+	width:50px;
+}
+
 .password-length{
 	display:flex;
 	align-items:center;
+	margin:0 10px;
 }
 
 .settings{
@@ -31,15 +58,36 @@ padding:10px;
 }
 
 #length {
-width:75px;
+width:150px;
 }
 
 .password {
-	font-size:16px;
-	padding:50px;
-	width:550px;
+	color:#fff;
+	font-size:22px;
+	font-weight:600;
+	padding:50px 0 30px 0;
 }
 
-.password-length {
-	width:30px;	
+.button-container{
+	user-select:none;
+}
+
+.btn{
+	height:30px;
+	width:70px;
+  	font-family: 'Courier New', monospace;
+	font-weight:500;
+	font-size:16px;
+	background:#222;
+	border:none;
+	color:#ccc;
+	box-shadow:0 0 0 2px #ccc;
+	transition:150ms;
+	cursor:pointer;	
+	margin:0 10px;
+}
+
+.btn:hover{
+	color:white;
+	box-shadow:0 0 0 1px #eee,0 0 0 4px #222,0 0 0 6px white;
 }

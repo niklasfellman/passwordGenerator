@@ -5,29 +5,34 @@
 	</head>
 	<body>
 		<div class="settings">
+			<div class="checkboxes">
 			<span>
-				<span class="password-length">10</span>
-				<input type="range" id="length" min="5" value="12" Max="50"/>
-				<label for="length">Length</label>
-			</span>
-			<span>
-				<input type="checkbox" id="letters" checked/>
+				<input type="checkbox" class="check-box" id="letters" checked/>
 				<label for="letters">Letters</label>
 			</span>
 			<span>
-				<input type="checkbox" id="numbers" checked/>
+				<input type="checkbox" class="check-box" id="numbers" checked/>
 				<label for="numbers">Numbers</label>
 			</span>
 			<span>
-				<input type="checkbox" id="capLetters" checked/>
+				<input type="checkbox" class="check-box" id="capLetters" checked/>
 				<label for="capLetters">Capital letters</label>
 			</span>
 			<span>
-				<input type="checkbox" id="specChars" checked/>
-				<label for="specChars">Special Characters</label>
+				<input type="checkbox" class="check-box" id="specChar" checked/>
+				<label for="specChar">Special Characters</label>
+			</span>
+			</div>
+			<span class="rangeslider">
+				<label for="length">Length</label>
+				<input type="range" id="length" min="5" value="12" Max="50"/>
+				<span class="password-length">10</span>
 			</span>
 		</div>
 		<div class="password">password</div>
-
+		<div class="button-container">	
+			<button class="btn" id="btn-new">New</button>
+<!--			<button class="btn">Copy</button> -->
+		</div>
 	</body>
 </html>
