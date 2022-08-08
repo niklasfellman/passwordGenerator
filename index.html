@@ -1,0 +1,33 @@
+<html>
+	<head>
+	<script src="script.js" defer></script>
+	<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="settings">
+			<span>
+				<span class="password-length">10</span>
+				<input type="range" id="length" min="5" value="12" Max="50"/>
+				<label for="length">Length</label>
+			</span>
+			<span>
+				<input type="checkbox" id="letters" checked/>
+				<label for="letters">Letters</label>
+			</span>
+			<span>
+				<input type="checkbox" id="numbers" checked/>
+				<label for="numbers">Numbers</label>
+			</span>
+			<span>
+				<input type="checkbox" id="capLetters" checked/>
+				<label for="capLetters">Capital letters</label>
+			</span>
+			<span>
+				<input type="checkbox" id="specChars" checked/>
+				<label for="specChars">Special Characters</label>
+			</span>
+		</div>
+		<div class="password">password</div>
+
+	</body>
+</html>

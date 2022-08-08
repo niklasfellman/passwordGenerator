@@ -1,0 +1,45 @@
+body{
+	background:#222;
+	color:#eee;
+	display:flex;
+	align-items:center;
+	justify-content:center;	
+  font-family: 'Courier New', monospace;
+}
+
+input,label{
+	cursor:pointer;
+}
+
+.password-length{
+	display:flex;
+	align-items:center;
+}
+
+.settings{
+	display:flex;
+	flex-direction:column;
+	user-select:none;
+}
+
+.settings span{
+	display:flex;
+}
+
+label{
+padding:10px;
+}
+
+#length {
+width:75px;
+}
+
+.password {
+	font-size:16px;
+	padding:50px;
+	width:550px;
+}
+
+.password-length {
+	width:30px;	
+}
